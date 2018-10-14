@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Hoybia's Activity 1</title>
+	<style type="text/css">
+	.answer1{
+		color:blue;
+	}
+	.answer2{
+		color:red;
+	}	
+	</style>
+</head>
+<body>
+	<p id="answer1" class="answer1"></p>
+	<p id="answer2" class="answer2"></p>
+	<p id="answer3"></p>
+	<script type="text/javascript">
+			var StudentFirstN = prompt("Input your First Name: ");
+			var StudentLastN = prompt("Input your Last Name: ");
+			var studentID = prompt("Input your I.D. number: ");
+			var grade = prompt("Input grade: ");
+			var passed = "PASSED";
+			var failed = "FAILED";
+			StudentGrade(grade);
+		function StudentGrade(grade){
+			if (grade>5 || grade<1){
+				document.getElementById("answer3").innerHTML = "Invalid Grade.";
+			}
+			else if (grade<=3){
+				if (grade % 2 == 0){
+				document.getElementById("answer1").innerHTML = "ID#: "+studentID+" Name: "+StudentFirstN+" "+StudentLastN+", Grade: "+grade+" - "+passed;
+				}
+				else{
+				document.getElementById("answer2").innerHTML = "ID#: "+studentID+" Name: "+StudentFirstN+" "+StudentLastN+" Grade: "+grade+" - "+passed;
+				}
+			}
+			else{
+				if(grade % 2 == 0){
+				document.getElementById("answer1").innerHTML = "ID#: "+studentID+" Name: "+StudentFirstN+" "+StudentLastN+" Grade: "+grade+" - "+failed;
+				}
+				else{
+				document.getElementById("answer2").innerHTML = "ID#: "+studentID+" Name: "+StudentFirstN+" "+StudentLastN+" Grade: "+grade+" - "+failed;
+				}	
+			}
+		}	
+	</script>
+</body>
+</html>
