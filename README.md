@@ -1,5 +1,4 @@
 # HoybiaJurey
-GRADE
 Openning the website.
 1. Download html file. NOTE: This website is not in any web domain so you just have to open it directly to its html file.
 2. Right click the Hoybia_FinalActivity1.html and hover on "open with".
